@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <div class="header-text">
+                <h1>Project Tracker</h1>
+                <p>Track your projects from idea to reality</p>
+            </div>
+            <div class="project-form">
+                <input type="text" id="project-name" placeholder="Project name">
+                <select id="project-category">
+                    <option value="Design">Design</option>
+                    <option value="Web">Web</option>
+                    <option value="Hardware">Hardware</option>
+                </select>
+                <textarea id="project-notes" placeholder="Project notes"></textarea>
+                <button class="create-project-button">Create Project</button>
+        </div>
+        </div>
+    </header>
+    <main class="board">
+        <section class="column" id="backlog-column">
+            <h2>Backlog</h2>
+        </section>
+        <section class="column" id="in-progress-column">
+            <h2>In Progress</h2>
+        </section>
+        <section class="column" id="review-column">
+            <h2>Review</h2>
+        </section>
+        <section class="column" id="completed-column">
+            <h2>Completed</h2>
+            <p class="empty-message" id="completed-empty">No projects yet</p>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
